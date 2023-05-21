@@ -17,10 +17,10 @@ class Employee:
         return f'{self.first} {self.last}'
     
     def apply_raise(self):
-        self.pay = int(float(self.pay) * self.raise_amount)
+        self.pay = int(self.pay * self.raise_amount)
 
-emp_1 = Employee('Arch', 'Angelic', '50000') # emp_1 is passed as self
-emp_2 = Employee('Meta', 'Angel', '50000')
+emp_1 = Employee('Arch', 'Angelic', 50000) # emp_1 is passed as self
+emp_2 = Employee('Meta', 'Angel', 50000)
 
 """ print(emp_1.pay)
 emp_1.apply_raise()

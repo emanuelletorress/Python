@@ -15,7 +15,7 @@ class Employee:
         return f'{self.first} {self.last}'
     
     def apply_raise(self):
-        self.pay = int(float(self.pay) * self.raise_amount)
+        self.pay = int(self.pay * self.raise_amount)
 
     # ~~~~~~~~~~~~ CLASS METHODS
 
@@ -38,8 +38,8 @@ class Employee:
         return True
 
 
-emp_1 = Employee('Arch', 'Angelic', '50000') # emp_1 is passed as self
-emp_2 = Employee('Meta', 'Angel', '50000')
+emp_1 = Employee('Arch', 'Angelic', 50000) # emp_1 is passed as self
+emp_2 = Employee('Meta', 'Angel', 50000)
 
 # we're changing the raise_amount value through this class method
 Employee.set_raise_amount(1.05)

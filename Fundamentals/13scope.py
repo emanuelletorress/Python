@@ -14,6 +14,8 @@ test()
 print(x) """
 
 # Working with enclosing functions
+x = 'global x'
+
 def outer():
     x = 'outer x'
 
@@ -26,3 +28,4 @@ def outer():
     print(x)
 
 outer()
+print(x)
